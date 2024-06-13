@@ -25,3 +25,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+### -----------------------------------
+- I componenti adesso si importano come moduli, esattamente come in react.
+In aggiunta a questo si usa anche `imports: [RouterOutlet, NomeComponente]` in questo caso in `app/app.component.ts`
+- Life cicle dei componenti
+- data binding

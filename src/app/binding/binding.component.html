@@ -1,0 +1,14 @@
+<button mat-raised-button color="primary" (click)="onClick(this)">
+  Binding
+</button>
+<br>
+<mat-form-field class="example-full-width" appearance="fill">
+  <mat-label>Input</mat-label>
+  <input matInput (input)="onInput($event)" />
+</mat-form-field>
+<br>
+<mat-form-field class="example-full-width" appearance="fill">
+  <mat-label>2way</mat-label>
+  <input matInput [(ngModel)]="twoway" />
+</mat-form-field>
+<p>{{twoway}}</p>
