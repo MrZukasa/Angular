@@ -31,3 +31,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 In aggiunta a questo si usa anche `imports: [RouterOutlet, NomeComponente]` in questo caso in `app/app.component.ts`
 - Life cicle dei componenti
 - data binding
+- ngIf direttiva strutturale
+  - per l'else si usa il templateReference

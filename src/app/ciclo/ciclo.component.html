@@ -1,0 +1,25 @@
+<h3>Ciclo ngFor</h3>
+<ul>
+  <li *ngFor="let persona of persone; let i = index; count as j">
+    {{ i + 1 }}. {{ persona.nome }} {{ persona.cognome }} of {{ j }}
+  </li>
+</ul>
+
+<h3>Switch</h3>
+<div [ngSwitch]="numero">
+  <p *ngSwitchCase="1">Cane</p>
+  <p *ngSwitchCase="2">Gatto</p>
+  <p *ngSwitchCase="3">Cavallo</p>
+  <p *ngSwitchDefault>Default</p>
+</div>
+
+<h3>NgStyle</h3>
+<ul>
+  <li *ngFor="let persona of persone">
+    <p [ngStyle]="{ color: persona.isOnline ? 'green' : 'red' }">
+      {{ persona.nome }} {{ persona.cognome }}
+    </p>
+  </li>
+</ul>
+
+<h3>NgClass</h3>

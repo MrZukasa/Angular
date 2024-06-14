@@ -1,14 +1,30 @@
 <button mat-raised-button color="primary" (click)="onClick(this)">
   Binding
 </button>
-<br>
+<br />
 <mat-form-field class="example-full-width" appearance="fill">
   <mat-label>Input</mat-label>
   <input matInput (input)="onInput($event)" />
 </mat-form-field>
-<br>
+<br />
 <mat-form-field class="example-full-width" appearance="fill">
   <mat-label>2way</mat-label>
   <input matInput [(ngModel)]="twoway" />
 </mat-form-field>
-<p>{{twoway}}</p>
+<p>{{ twoway }}</p>
+<br />
+<button mat-raised-button color="primary" (click)="isVisible = !isVisible">
+  On/Off
+</button>
+<p *ngIf="isVisible">Visibile</p>
+<p *ngIf="!isVisible">Non visibile</p>
+<br />
+<button
+  mat-raised-button
+  color="primary"
+  (click)="isVisibleRef = !isVisibleRef"
+>
+  templateReference
+</button>
+<p *ngIf="isVisibleRef; else elseTemplate">Visibile</p>
+<ng-template #elseTemplate><p>Non visibile</p></ng-template>
