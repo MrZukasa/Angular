@@ -1,32 +1,29 @@
-# Angular
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.0.
-
+:::tip
+Una cosa che posso fare per non installare Angular globalmente è usare `npx ng`
+:::
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Per deployare il server locale si fa `ng serve` nello specifico nel mio caso si fa `npx ng serve`. Il deploy avverrà in `http://localhost:4200/`.
+A meno che non si specifichi il contrario, rimane attivo il live reload
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Per scaffoldare un nuovo componente si usa `npx ng generate component [nome]` oppure nella versione ridotta `npx g c [nome]`.
+Si può anche scaffoldare altro con `npx ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Per buildare il progetto si usa `npx ng build`.La build verrà scaffoldata in `dist/`.
 
-## Running unit tests
+## Running unit tests 🤮
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Running end-to-end tests 🤮
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
-### -----------------------------------
+---
 - I componenti adesso si importano come moduli, esattamente come in react.
 In aggiunta a questo si usa anche `imports: [RouterOutlet, NomeComponente]` in questo caso in `app/app.component.ts`
 - Life cicle dei componenti
